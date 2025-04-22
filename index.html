@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gender Options Bookmarklet</title>
+  <title>Gender Options Bookmarklet - SEIU District 1199</title>
   <style>
     body {
       font-family: sans-serif;
@@ -10,6 +10,15 @@
       margin: 2rem auto;
       padding: 1rem;
       line-height: 1.6;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    header img {
+      height: 70px;
+      margin-right: 1rem;
     }
     .bookmarklet {
       display: inline-block;
@@ -29,15 +38,29 @@
       padding: 2px 6px;
       border-radius: 4px;
     }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9em;
+      color: gray;
+    }
   </style>
 </head>
 <body>
-  <h1>📌 Gender Options Bookmarklet</h1>
-  <p>
-    This bookmarklet updates the gender dropdown on your web app with new, more inclusive options—without changing the selected value.
-  </p>
+  <header>
+    <img src="https://www.seiu1199.org/wp-content/uploads/2024/04/round_logo.png" alt="SEIU 1199 Logo">
+    <h1>Gender Options Bookmarklet</h1>
+  </header>
 
-  <h2>➡️ To Install:</h2>
+  <p>
+    This page lets you install a bookmarklet that updates the gender dropdown on the edit member page of the membership database. It:
+  </p>
+  <ul>
+    <li>Replaces the gender options with an updated, more inclusive list</li>
+    <li>Preserves the current selection (if one is already chosen)</li>
+    <li>Does not affect anything else on the page or send any data</li>
+  </ul>
+
+  <h2>📌 How to Install</h2>
   <ol>
     <li>Make sure your <strong>Bookmarks Bar is visible</strong>.</li>
     <li><strong>Drag the button below</strong> to your bookmarks bar:</li>
@@ -49,16 +72,20 @@
     </a>
   </p>
 
-  <h2>✅ To Use:</h2>
+  <h2>✅ How to Use</h2>
   <ol>
-    <li>Go to the web form as usual.</li>
-    <li>Wait for the page to load fully.</li>
-    <li>Click the <strong>Update Gender Options</strong> bookmark in your bookmarks bar.</li>
-    <li>The gender dropdown will update—keeping your current selection intact.</li>
+    <li>Go to the edit member page as you normally would.</li>
+    <li>Once it loads, click the <strong>Update Gender Options</strong> bookmark in your bookmarks bar.</li>
+    <li>The gender dropdown will update automatically with the new options, keeping your selection intact.</li>
   </ol>
 
-  <p style="margin-top:2rem;font-size:0.9em;color:gray;">
-    Works in both Microsoft Edge and Google Chrome.
-  </p>
+  <footer>
+    <p>
+      If you have any questions, contact <strong>Nick Speelman</strong> at <a href="mailto:nspeelman@seiu1199.org">nspeelman@seiu1199.org</a>.
+    </p>
+    <p>
+      Hosted by SEIU District 1199 WV/KY/OH on Github.
+    </p>
+  </footer>
 </body>
 </html>
