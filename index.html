@@ -68,8 +68,6 @@
 
   <p>
     <a class="bookmarklet" href="javascript:(function(){const g=document.getElementById('ddlGender');if(g){const v=g.value;const opts=[{v:'UNKNOWN',t:'UNKNOWN'},{v:'MALE',t:'MALE'},{v:'FEMALE',t:'FEMALE'},{v:'NONE',t:'NONE'},{v:'OTHER',t:'OTHER'}];g.innerHTML='';opts.forEach(o=>{const opt=document.createElement('option');opt.value=o.v;opt.text=o.t;g.appendChild(opt);});if(!opts.some(o=>o.v===v)){const custom=document.createElement('option');custom.value=v;custom.text=v;g.appendChild(custom);}g.value=v;}})();">Make Gender Dropdown Inclusive</a>
-
-      Update Gender Options
     </a>
   </p>
 
