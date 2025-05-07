@@ -67,7 +67,7 @@
   </ol>
 
   <p>
-    <a class="bookmarklet" href="javascript:(function(){const g=document.getElementById('ddlGender');if(g){const v=g.value;const opts=[{v:'UNKNOWN',t:'UNKNOWN'},{v:'MALE',t:'MALE'},{v:'FEMALE',t:'FEMALE'},{v:'NONE',t:'NONE'},{v:'OTHER',t:'OTHER'}];g.innerHTML='';opts.forEach(o=>{const opt=document.createElement('option');opt.value=o.v;opt.text=o.t;g.appendChild(opt);});if(!opts.some(o=>o.v===v)){const custom=document.createElement('option');custom.value=v;custom.text=v;g.appendChild(custom);}g.value=v;}})();">Make Gender Dropdown Inclusive</a>
+    <a class="bookmarklet" href="javascript:(function(){const g=document.getElementById('ddlGender');if(g){const v=g.value;g.innerHTML='<option value=&quot;UNKNOWN&quot;>UNKNOWN</option><option value=&quot;MALE&quot;>MALE</option><option value=&quot;FEMALE&quot;>FEMALE</option><option value=&quot;NONE&quot;>NONE</option><option value=&quot;OTHER&quot;>OTHER</option>';if(![...g.options].some(o=>o.value===v)){const opt=document.createElement('option
     </a>
   </p>
 
@@ -84,6 +84,9 @@
     </p>
     <p>
       Hosted by SEIU District 1199 WV/KY/OH on Github.
+    </p>
+    <p>
+      Updated 5/7/2025 - 11:15 AM
     </p>
   </footer>
 </body>
